@@ -1,2 +1,2 @@
 # github-H
-# The file of one is question about answers.
+# one文件夹，涉及到集合算法。和问答管线函数等。
