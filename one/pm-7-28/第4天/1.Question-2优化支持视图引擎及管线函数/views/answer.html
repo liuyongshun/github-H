@@ -1,0 +1,17 @@
+{{include 'shared/navbar'}}
+<div class="container">
+    <form>
+        <div class="form-group">
+            <!--隐藏域，可用来页面间传值-->
+            <input type="hidden" name="question" value="{{question}}">
+            <textarea name="content" class="form-control" rows="10" placeholder="请详填写回答内容" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success form-control">提交回答</button>
+    </form>
+</div>
+{{include 'shared/modal'}}
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.cookie.js"></script>
+<script src="/scripts/answer.js"></script>
+{{include 'shared/footer'}}

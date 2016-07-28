@@ -1,0 +1,45 @@
+{{include '../shared/navbar'}}
+<div class="container">
+    <form action="/api/user/register" method="POST">
+        <div class="form-group">
+            <input class="form-control" type="text" name="petname" required
+                pattern="^[0-9a-zA-Z\u4e00-\u9fa5]{2,16}$" placeholder="请填写昵称">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="password" required 
+                pattern="^.{6,16}$" placeholder="请填写密码">
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" required 
+                pattern="^.{6,16}$" placeholder="请再次输入密码">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="radio" value="true" name="isMale" id="male" checked>
+                先生
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="radio" value="false" name="isMale" id="famale">
+                女士
+            </label>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="email" name="email" required placeholder="请输入电子邮箱地址">
+        </div>
+        <div class="form-group">
+            <select name="course" class="form-control">
+                <option value="HTML5" selected>HTML5</option>
+                <option value="iOS">iOS</option>
+                <option value="Android">Android</option>
+            </select>
+        </div>
+        <input type="submit" class="btn btn-success form-control" value="注册"></input>
+    </form>
+</div>
+{{include '../shared/modal'}}
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/scripts/user/register.js"></script>
+{{include '../shared/footer'}}

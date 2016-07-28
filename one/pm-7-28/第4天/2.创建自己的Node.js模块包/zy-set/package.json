@@ -1,0 +1,14 @@
+{
+  "name": "zy-set",
+  "version": "1.0.0",
+  "description": "我自己创建的模块包",
+  "main": "set.js",
+  "scripts": {
+    "test": "node set-test"
+  },
+  "keywords": [
+    "集合运算"
+  ],
+  "author": "董书华",
+  "license": "ISC"
+}

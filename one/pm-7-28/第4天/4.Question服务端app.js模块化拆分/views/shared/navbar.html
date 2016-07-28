@@ -1,0 +1,16 @@
+{{include 'header'}}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-title">
+                <span onclick="history.go(-1)" class="glyphicon glyphicon-chevron-left pull-left"></span>
+                {{if title}}{{title}}{{else}}智游教育问答{{/if}}
+                {{if rightNav == 'register'}}
+                <span onclick="location.href='/user/register'" class="glyphicon glyphicon-plus-sign pull-right"></span>
+                {{else}}
+                <span onclick="location.href='/'" class="glyphicon glyphicon-home pull-right"></span>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</nav>

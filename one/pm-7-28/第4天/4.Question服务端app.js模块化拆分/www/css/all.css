@@ -1,0 +1,55 @@
+body{
+    padding-top: 65px;
+}
+
+@media (min-width: 768px){
+    .navbar-text{
+        margin-right: 0
+    }
+}
+
+@media (max-width: 768px){
+    .navbar-brand{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.navbar-title{
+    font-size: 18px;
+    line-height: 20px;
+    padding: 15px;
+    color: #9d9d9d;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar-text{
+    cursor: pointer;
+}
+
+.media img{
+    width: 64px;
+    height: 64px;
+}
+
+.glyphicon{
+    cursor: pointer;
+}
+
+.media-object{
+    border-radius: 50%;
+}
+
+.media-footing{
+    padding-top: 5px;
+    color: #888;
+}
+
+.media{
+    cursor: pointer;
+}
+
+.media-child{
+    padding-left: 20px;
+}

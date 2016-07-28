@@ -1,0 +1,14 @@
+{{include '../shared/navbar'}}
+<div class="container">
+    <form action="/api/user/photo" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <input type="file" name="photo" required accept=".jpg,.png">
+        </div>
+        <input type="submit" class="btn btn-success form-control" value="上传"></input>
+    </form>
+</div>
+{{include '../shared/modal'}}
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/scripts/user/photo.js"></script>
+{{include '../shared/footer'}}
