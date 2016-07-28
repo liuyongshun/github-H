@@ -1,0 +1,23 @@
+{
+  "name": "questions",
+  "version": "1.0.1",
+  "description": "node.js版问答",
+  "main": "app.js",
+  "dependencies": {
+    "art-template": "^3.0.3",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "multer": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "questions",
+    "node.js"
+  ],
+  "author": "董书华",
+  "license": "ISC"
+}

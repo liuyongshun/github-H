@@ -1,0 +1,64 @@
+{{include 'shared/header'}}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container dropdown">
+        <div class="row">
+            <a class="navbar-brand" href="#">智游教育</a>
+            <div class="navbar-text pull-right text-right">
+                <span onclick="location.href='/ask'"><span class="glyphicon glyphicon-plus"></span> 提问</span>&#x3000;
+                {{if user}}
+                    <span class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span>
+                        {{user}}
+                    </span>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a class="text-right" href="/user/photo">修改头像</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a class="text-right" href="/user/signout">退出</a></li>
+                    </ul>
+                {{else}}
+                    <span onclick="location.href='/user/signin'">
+                        <span class="glyphicon glyphicon-user"></span>
+                        登录
+                    </span>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container questions">
+    {{each questions as q}}
+        <div class="media" onclick="location.href='/answer/{{q.fileName}}'">
+            <div class="media-left">
+                <a>
+                    <img class="media-object" src="/uploads/{{q.petname}}.jpg" onerror="this.src='/images/user.png'">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">{{q.petname}}</h4>
+                {{q.content}}
+                <div class="media-footing">
+                    {{q.time}}
+                </div>
+            </div>
+        </div>
+        {{each q.answers as a}}
+            <div class="media media-child">
+                <div class="media-body">
+                    <h4 class="media-heading">{{a.petname}}</h4>
+                    {{a.content}}
+                    <div class="media-footing">
+                        {{a.time}}
+                    </div>
+                </div>
+                <div class="media-right">
+                    <a>
+                        <img class="media-object" src="/uploads/{{a.petname}}.jpg" onerror="this.src='/images/user.png'">
+                    </a>
+                </div>
+            </div>
+        {{/each}}
+    {{/each}}
+</div>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+{{include 'shared/footer'}}
