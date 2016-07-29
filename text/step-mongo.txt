@@ -1,0 +1,8 @@
+﻿mongo：
+1.找到mongo安装的位置。cmd进入bin文件夹下。输入mongo，启动mongo的shell。
+2.输入db命令，，显示当前正在使用的数据库。
+3.use dataname（数据库名字）   切换数据库。
+4.ctrl+c退出数据库，或直接点右上角X。
+5.help 获取各种命令操作。
+6.db.listname(表名).insert(json对象)   创建表并插入一条数据。
+7.db.listname(表名).find()         查找并展示数据。
