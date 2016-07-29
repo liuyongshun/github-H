@@ -8,5 +8,17 @@
 7.db.listname(表名).find()         查找并展示数据。
 8.db.user.find().pretty()            数据显示美化。
 9.print()                  输出代替console.log。支持javascript语法。
-10.支持表达式，变量，能用for循环和while循环。换行要先写单个小括号或大括号，点enter（回车）才会换行。
+10.支持表达式，变量，能用for循环和while循环。换行要先写单个小括号或大括11.
+11.db.listname(表名).update({这里是查询条件（json对像），找到想要更新的东西（json对象）},{更新内容（数据）})。
+12.
 
+
+
+command：
+mongo     					  运行mongo,在bin文件下输入。
+db    						 显示当前数据库。
+use datename                 转换到数据库，没有时创建。
+show dbs 					 显示所有的数据库。
+db.listname.insert({})   		创建表并插入数据。
+show collections 			显示所有的表。
+db.listname.find()           找到并显表内的数据。
