@@ -14,11 +14,12 @@
 
 
 
-command：
+# command：
 mongo     					  运行mongo,在bin文件下输入。
 db    						 显示当前数据库。
 use datename                 转换到数据库，没有时创建。
 show dbs 					 显示所有的数据库。
-db.listname.insert({})   		创建表并插入数据。
+db.listname.insert({})  	创建表并插入数据。
 show collections 			显示所有的表。
 db.listname.find()           找到并显表内的数据。
+db.listname.find().pretty()	 美化显示的数据
