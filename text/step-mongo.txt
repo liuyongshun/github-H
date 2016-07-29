@@ -6,3 +6,7 @@
 5.help 获取各种命令操作。
 6.db.listname(表名).insert(json对象)   创建表并插入一条数据。
 7.db.listname(表名).find()         查找并展示数据。
+8.db.user.find().pretty()            数据显示美化。
+9.print()                  输出代替console.log。支持javascript语法。
+10.支持表达式，变量，能用for循环和while循环。换行要先写单个小括号或大括号，点enter（回车）才会换行。
+
