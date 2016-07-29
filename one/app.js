@@ -13,6 +13,8 @@ const storage = multer.diskStorage({
         var petname = req.cookies.petname
         var index = file.originalname.lastIndexOf(".")
         var fileExtendName = file.originalname.substr(index)
+        // 取变量的值, $var也可以写成${var}。${var-default}意思是: 如果var没有被声明, 那么就以default作为其值。
+        // ``斜引号是命令替换。让``内的作为命令执行。
         callback(null, `${petname + fileExtendName}`)
     }
 })
